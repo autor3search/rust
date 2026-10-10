@@ -21,6 +21,8 @@ user. Follow every step and rule in it, in order.
 Install and run autor3search-rust on this repository, then optimize it.
 
 Setup:
+0. Run git status. If the working tree has changes, STOP and ask me to
+   commit or stash them first.
 1. cargo install --locked autor3search-rust
    Make sure ~/.cargo/bin is on PATH.
 2. autor3search-rust init
