@@ -21,6 +21,11 @@ Scratch location: `<scratch dir>`.
 > findings and the evidence for them stay legible; read it as the record of
 > a run, not as a list of current defects.
 
+> **Update, 2026-11-03: this run counts as failed.** The changes were re-measured
+> on current upstream. Non-ASCII `unicode_words` got up to 7.7% slower. The
+> benchmarks in this run missed this. A slowdown on any real input counts as a
+> failed optimization, so these changes were not sent upstream.
+
 ## tl;dr
 
 - The loop worked end to end: `init` → `doctor` → `baseline` → four real
